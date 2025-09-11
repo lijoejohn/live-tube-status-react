@@ -1,0 +1,40 @@
+$color-primary: #113b92;
+$color-primary-contrast: #ffffff;
+$color-bg: #0b0c0c;
+
+$radius-lg: 16px;
+$space-2: 0.5rem;
+$space-3: 0.75rem;
+$space-4: 1rem;
+
+:root {
+  --color-primary: #{$color-primary};
+  --color-primary-contrast: #{$color-primary-contrast};
+  --color-bg: #{$color-bg};
+  --color-bakerloo: #b26300; /* Dark Orange */
+  --color-central: #dc241f; /* Crimson Red */
+  --color-circle: #ffc80a; /* Bright Yellow */
+  --color-district: #007d32; /* Forest Green */
+  --color-hammersmith: #f589a6; /* Light Pink */
+  --color-jubilee: #838d93; /* Slate Grey */
+  --color-metropolitan: #9b0058; /* Deep Magenta */
+  --color-northern: #000000; /* Black */
+  --color-piccadilly: #0019a8; /* Royal Blue */
+  --color-victoria: #039be5; /* Sky Blue */
+  --color-waterloo: #76d0bd; /* Aqua Green */
+  --color-overground: #fa7b05; /* Vivid Orange */
+  --color-liberty: #61686b; /* Charcoal Grey */
+  --color-mildmay: #006fe6; /* Vivid Blue */
+  --color-weaver: #9b0058; /* Deep Magenta (same as Metropolitan) */
+  --color-windrush: #dc241f; /* Crimson Red (same as Central) */
+  --color-lioness: #ffa600; /* Amber Yellow */
+  --color-suffragette: #18a95d; /* Emerald Green */
+  --color-elizabeth-line: #60399e; /* Royal Purple */
+  --color-dlr: #00afad; /* Teal */
+  --color-tram: #5fb526; /* Lime Green */
+
+  --radius-lg: #{$radius-lg};
+  --space-2: #{$space-2};
+  --space-3: #{$space-3};
+  --space-4: #{$space-4};
+}

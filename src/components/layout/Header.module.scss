@@ -1,0 +1,19 @@
+.logo {
+
+  background-image: url('../../assets/vspritepng.png');
+  background-repeat: no-repeat;
+
+  background-size: 126px 4956px;
+  background-position: -42px -210px;
+  height: 42px;
+  width: 42px;
+  pointer-events: none;
+  display: inline-block;
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: var(--color-primary);
+  width: fit-content;
+}

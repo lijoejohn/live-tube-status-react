@@ -1,0 +1,40 @@
+@use './_tokens' as *;
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body, #root { height: 100%; }
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-primary-contrast);
+  font-family: GDS Transport, Arial, sans-serif;
+}
+.bg-color-red {
+  background-color: var(--color-red);
+}
+
+/* Utility classes for background colors */
+.bg-color-bakerloo { background-color: var(--color-bakerloo); }
+.bg-color-central { background-color: var(--color-central); }
+.bg-color-circle { background-color: var(--color-circle); }
+.bg-color-district { background-color: var(--color-district); }
+.bg-color-hammersmith { background-color: var(--color-hammersmith); }
+.bg-color-jubilee { background-color: var(--color-jubilee); }
+.bg-color-metropolitan { background-color: var(--color-metropolitan); }
+.bg-color-northern { background-color: var(--color-northern); }
+.bg-color-piccadilly { background-color: var(--color-piccadilly); }
+.bg-color-victoria { background-color: var(--color-victoria); }
+.bg-color-waterloo { background-color: var(--color-waterloo); }
+.bg-color-overground { background-color: var(--color-overground); }
+.bg-color-liberty { background-color: var(--color-liberty); }
+.bg-color-mildmay { background-color: var(--color-mildmay); }
+.bg-color-weaver { background-color: var(--color-weaver); }
+.bg-color-windrush { background-color: var(--color-windrush); }
+.bg-color-lioness { background-color: var(--color-lioness); }
+.bg-color-suffragette { background-color: var(--color-suffragette); }
+.bg-color-elizabeth-line { background-color: var(--color-elizabeth-line); }
+.bg-color-dlr { background-color: var(--color-dlr); }
+.bg-color-tram { background-color: var(--color-tram); }

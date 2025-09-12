@@ -11,8 +11,3 @@ export type TubeLine = {
   modeName: string;
   lineStatuses: LineStatuses[];
 };
-
-export type ResponsiveListProps = {
-  items: { id: string; name: string }[];
-};
-  

@@ -20,9 +20,8 @@ https://lijo-tube-status-react.web.app
 
 ### Run the application
 
-1. `cd app`
-2. `yarn install`
-3. `yarn run dev`
+1. `yarn install`
+2. `yarn run dev`
 
 - The local dev server will be available on 5173 port - http://localhost:5173/
 - If you want to access it in mobile with the same network http://192.168.1.178:5173

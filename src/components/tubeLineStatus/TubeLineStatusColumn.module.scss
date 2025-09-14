@@ -3,26 +3,29 @@
   margin: 0;
   padding: 0;
   display: grid;
+  // Tab / Mobile one column
   grid-template-columns: 1fr;
   gap: no gap;
   align-items: start;
 }
 @media (min-width: 768px) {
   .listGrid {
+    // Lap two column
     grid-template-columns: 1fr 1fr;
     column-gap: var(--space-4);
   }
 }
+
 .column {
   list-style: none;
   margin: 0;
   padding: 0;
-  border-right: 1px solid #cacaca;
+  border-right: 1px solid var(--border-color);
   &:first-child {
-    border-top: 1px solid #cacaca;
+    border-top: 1px solid var(--border-color);
   }
   &:last-child {
-    border-bottom: 1px solid #cacaca;
+    border-bottom: 1px solid var(--border-color);
     .listItem {
       &:last-child {
         border-bottom: none;
@@ -32,18 +35,18 @@
 }
 @media (min-width: 768px) {
   .column {
-    border: 1px solid #cacaca;
+    border: 1px solid var(--border-color);
   }
 }
 .listItem {
   min-height: 40px;
-  border-bottom: 1px solid #cacaca;
+  border-bottom: 1px solid var(--border-color);
   display: flex;
   align-self: start;
   align-items: center;
   width: 100%;
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: var(--color-primary-contrast);
 }
 @media (min-width: 768px) {
   .listItem {
@@ -54,11 +57,14 @@
 }
 .colourTag {
   width: 10px;
-  height: -webkit-fill-available;
+  height: 100%;
+  min-height: 40px;
+  align-self: stretch;
+  display: flex;
 }
 .listItemTitle {
   cursor: pointer;
-  color: #505a5f;
+  color: var(--text-color);
   display: inline;
   &:hover {
     text-decoration: underline;
@@ -67,14 +73,14 @@
 }
 
 .goodService {
-  color: #505a5f;
+  color: var(--text-color);
   display: inline;
-  margin-left: 1.5rem;
+  margin-left: var(--space-4);
 }
 
 .listItemTitle {
   position: relative;
-  padding-left: 1.5rem;
+  padding-left: var(--space-4);
 
   &::before {
     content: "+";
@@ -83,7 +89,7 @@
     top: 50%;
     transform: translateY(-50%);
     font-weight: bold;
-    font-size: 1rem;
+    font-size: var(--space-4);
   }
 
   details[open] &::before {
@@ -92,10 +98,16 @@
 }
 details[open] > summary {
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: var(--space-4);
   display: flex;
 }
 details > div {
-  margin-top: 1rem;
-  margin-left: 1.5rem;
+  margin-top: var(--space-4);
+  margin-left: var(--space-4);
+}
+.listItemContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; // <-- vertically center content
+  flex: 1;
 }

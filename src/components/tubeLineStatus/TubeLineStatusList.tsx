@@ -6,7 +6,13 @@ import { TubeLineStatusColumn } from "./TubeLineStatusColumn";
 type Props = {
   items: TubeLine[];
 };
-
+/**
+ * TubeLineStatusList component to display Tube line statuses in two columns.
+ * Splits the list of TubeLine items into two columns for balanced display.
+ * Renders a message if no records are available.
+ *
+ * @param items - Array of TubeLine objects to display.
+ */
 export const TubeLineStatusList: React.FC<Props> = ({ items }) => {
   const mid = Math.ceil(items.length / 2);
   const left: TubeLine[] = items.slice(0, mid);

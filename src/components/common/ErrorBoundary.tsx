@@ -1,3 +1,13 @@
+/**
+ * ErrorBoundary component to catch JavaScript errors anywhere in its child component tree,
+ * log those errors, and display a fallback UI instead of the component tree that crashed.
+ * Uses GOV.UK styling for the fallback message.
+ *
+ * Usage:
+ * <ErrorBoundary>
+ *   <YourComponent />
+ * </ErrorBoundary>
+ */
 import React, { ErrorInfo, ReactNode } from "react";
 
 type ErrorBoundaryProps = {

@@ -1,3 +1,8 @@
+/**
+ * Error component to display a user-friendly error message
+ * when there is a problem loading the tube status.
+ * Uses GOV.UK styling for error messages.
+ */
 export const Error = () => {
   return (
     <div className="govuk-error-message" role="alert">

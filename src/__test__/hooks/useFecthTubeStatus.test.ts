@@ -3,16 +3,6 @@ import { waitFor } from "@testing-library/react"; // <-- import waitFor
 
 import useFecthTubeStatus from "../../hooks/useFecthTubeStatus";
 
-// Mock environment variables
-const OLD_ENV = process.env;
-beforeEach(() => {
-  jest.resetModules();
-  process.env = { ...OLD_ENV, BACK_END_URL: "http://mock.api", API_KEY: "123" };
-});
-afterAll(() => {
-  process.env = OLD_ENV;
-});
-
 const mockData = [
   { id: 1, name: "Bakerloo", lineStatuses: [{ statusSeverity: 10 }] },
   { id: 2, name: "Central", lineStatuses: [{ statusSeverity: 5 }] },
@@ -26,6 +16,7 @@ jest.mock("../../utils/tubeStatus", () => ({
 describe("useFecthTubeStatus", () => {
   it("should fetch and return data", async () => {
     global.fetch = jest.fn().mockResolvedValue({
+      ok: true,
       json: () => Promise.resolve(mockData),
     }) as any;
 

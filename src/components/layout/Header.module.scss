@@ -1,6 +1,5 @@
 .logo {
-
-  background-image: url('../../assets/vspritepng.png');
+  background-image: url("../../assets/vspritepng.png");
   background-repeat: no-repeat;
 
   background-size: 126px 4956px;
@@ -13,7 +12,7 @@
 .logoContainer {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: var(--space-4);
   background-color: var(--color-primary);
   width: fit-content;
 }

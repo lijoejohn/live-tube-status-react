@@ -6,7 +6,11 @@ import s from "./TubeLineStatusContainer.module.scss";
 import useFecthTubeStatus from "../../hooks/useFecthTubeStatus";
 import { Loader } from "components/common/Loader";
 import { Error } from "components/common/Error";
-
+/**
+ * Container component for displaying Tube line status updates.
+ * Handles fetching Tube status data, loading and error states,
+ * and renders the Header, Footer, Loader, Error, and TubeLineStatusList components.
+ */
 export const TubeLineStatusContainer: React.FC = () => {
   const [loading, data, error] = useFecthTubeStatus();
   return (
